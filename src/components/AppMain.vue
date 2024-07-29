@@ -60,7 +60,7 @@ export default {
         img{
             max-width: 75px;
             max-height: 75px;
-            margin: 0px 5px;
+            margin-right: 10px;
         }
         p{
             color: variables.$white-color;
