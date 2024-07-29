@@ -41,7 +41,7 @@ export default {
             a{
                 text-decoration: none;
                 color: rgb(0, 0, 0);
-                padding-bottom: 50px;
+                padding-bottom: 70px;
 
                 &:hover{
                     border-bottom: 5px solid variables.$primary-color;
