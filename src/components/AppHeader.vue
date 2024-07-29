@@ -36,10 +36,17 @@ export default {
 
         li{
             margin: 0px 15px;
+
             a{
                 text-decoration: none;
                 color: rgb(0, 0, 0);
+                padding-bottom: 50px;
+
+                &:hover{
+                    border-bottom: 5px solid #0c7cec;
+                }
             }
+
         }
     }
 </style>
