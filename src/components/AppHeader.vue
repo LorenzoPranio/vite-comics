@@ -31,6 +31,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables.scss';
     ul{
         display: flex;
 
@@ -43,7 +44,8 @@ export default {
                 padding-bottom: 50px;
 
                 &:hover{
-                    border-bottom: 5px solid #0c7cec;
+                    border-bottom: 5px solid variables.$primary-color;
+                    color: variables.$primary-color;
                 }
             }
 
