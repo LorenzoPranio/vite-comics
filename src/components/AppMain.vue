@@ -12,11 +12,12 @@ export default {
 <template>
     <div>
         <div class="bg-teentitans">
+            <span class="badge"><h4 class="fw-bold">CURRENT SERIES</h4></span>
         </div>
         <div class="bg-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 p-5 d-flex flex-wrap justify-content-center">
+                    <div class="col-12 p-2 d-flex flex-wrap justify-content-center mt-3">
                         <div v-for="(comic, index) in comics" :key="index" class="col-2 d-flex">
                             <div class="card m-2">
                                 <img :src="comic.thumb" :alt="comic.series" class="card-img-top img-fluid">
@@ -24,6 +25,9 @@ export default {
                                     <p class="text-center">{{ comic.series }}</p>
                                 </div>
                             </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary"><p class="fw-bold">LOAD MORE</p></button>
                         </div>
                     </div>
                 </div>
@@ -85,6 +89,18 @@ export default {
     background-image: url(../assets/jumbotron.jpg);
     background-size: cover;
     height: 450px;
+    position: relative;
+    .badge{
+        position: absolute;
+        bottom: -22px;
+        left: 150px;
+        background-color: variables.$primary-color;
+        border-radius: 0px;
+        padding: 8px 25px;
+        h4{
+            margin: 0px;
+        }
+    }
 }
 .card{
     background-color: transparent;
@@ -95,6 +111,16 @@ export default {
         height: 205px;
         margin: 10px;
     }
+    p{
+        margin: 0px;
+    }
+}
+.btn-primary{
+    color: variables.$white-color;
+    background-color: variables.$primary-color;
+    border-radius: 0px;
+    padding: 8px 60px;
+    margin-top: 20px;
     p{
         margin: 0px;
     }
