@@ -6,6 +6,8 @@ export default {
 
 <template>
     <div>
+        <div class="bg-teentitans">
+        </div>
         <div class="bg-dark">
             <div class="container">
                 <div class="row">
@@ -66,6 +68,11 @@ export default {
             color: variables.$white-color;
         }
     }
+}
+.bg-teentitans{
+    background-image: url(../assets/jumbotron.jpg);
+    background-size: cover;
+    height: 450px;
 }
     
 </style>
